@@ -205,7 +205,7 @@ class Cart extends Component {
                         </p>
                     </div>
                     <div className="col-12 col-lg-7 text-center mt-4 mt-lg-0">
-                        <div className="mx-5 card px-4 py-3">
+                        <div className="mx-lg-5 card px-4 py-3">
                             <TextField
                                 error={this.state.errors.name ? true : false}
                                 helperText={this.state.errors.name}
