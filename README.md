@@ -14,7 +14,7 @@ API endpoints
 
 ## State Management
 
-React/Redux used for state management on front-end.
+React/Redux used for state management.
 
 
 ## Routing
