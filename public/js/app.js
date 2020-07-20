@@ -99775,7 +99775,7 @@ var Cart = /*#__PURE__*/function (_Component) {
         }, "Amount to pay:", " ", this.props.items.length != 0 ? this.countPrice(this.props.total + 5, this.props.currency) : "")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           className: "col-12 col-lg-7 text-center mt-4 mt-lg-0"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          className: "mx-5 card px-4 py-3"
+          className: "mx-lg-5 card px-4 py-3"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_5__["default"], {
           error: this.state.errors.name ? true : false,
           helperText: this.state.errors.name,
