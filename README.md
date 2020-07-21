@@ -27,3 +27,7 @@ SPA with react/router.
 - Currency changer ($ and €)
 - Client & server side validation
 - Cart with Redux and laravel sessions
+
+## Demo
+
+https://yummipizzaa.herokuapp.com/
