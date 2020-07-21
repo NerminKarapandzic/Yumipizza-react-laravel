@@ -270,7 +270,7 @@ class Cart extends Component {
                 </div>
             );
         } else {
-            return <h3>Ooops, you forgot to put pizzas in your cart? </h3>;
+            return <h3>Your cart is empty. </h3>;
         }
     }
 

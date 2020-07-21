@@ -99831,7 +99831,7 @@ var Cart = /*#__PURE__*/function (_Component) {
           }
         }))));
       } else {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Ooops, you forgot to put pizzas in your cart? ");
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Your cart is empty. ");
       }
     }
   }, {
@@ -100213,10 +100213,7 @@ var mapDispatchToProps = function mapDispatchToProps() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _PizzaContainer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./PizzaContainer */ "./resources/js/components/PizzaContainer.js");
+/* harmony import */ var _PizzaContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PizzaContainer */ "./resources/js/components/PizzaContainer.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -100238,8 +100235,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
 
 
 
@@ -100267,7 +100262,7 @@ var PizzaList = /*#__PURE__*/function (_Component) {
       var _this2 = this;
 
       //get the pizzas from api
-      axios.get('api/pizzas').then(function (response) {
+      axios.get("api/pizzas").then(function (response) {
         var pizzas = response.data;
 
         _this2.setState({
@@ -100281,7 +100276,7 @@ var PizzaList = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       var pizzas = this.state.pizzas.map(function (pizza) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PizzaContainer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PizzaContainer__WEBPACK_IMPORTED_MODULE_1__["default"], {
           key: pizza.id,
           pizza: pizza
         });
